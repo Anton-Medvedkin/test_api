@@ -1,4 +1,11 @@
 import requests
+from log import logger_setup
+import os
+
+
+log_file_path = os.path.join('C://Users//1//Desktop//INTEXSOFT//api_test//log', 'order_acceptance_log.log')
+logger = logger_setup.setup_logger("DeleteLogger", log_file_path)
+
 
 class TestOrderAcceptance:
 
@@ -27,7 +34,9 @@ class TestWithoutParameters:
         assert response.json() == {'code': 400, 'message': 'Недостаточно данных для поиска'}, f"A {'code': 400, 'message': 'Недостаточно данных для поиска'} response was expected and a {response.json()} response was returned."
 
     def test_order_acceptance_without_order_id(self, login_courier, base_url):
-        response = requests.put(base_url + f"orders/accept?courierId={login_courier}")
+        logger.info("Testing order acceptance without order ID")
+        response = requests.put(base_url + f"orders/accept/?courierId={login_courier}")
+        logger.debug(f"Status code {response.status_code} was returned and message{response.json()}")
         assert response.status_code == 400, f"Status code 400 was expected and code {response.status_code} was returned."
         assert response.json() == {'code': 400, 'message': 'Недостаточно данных для поиска'}, f"A {'code': 400, 'message': 'Недостаточно данных для поиска'} response was expected and a {response.json()} response was returned."
 
