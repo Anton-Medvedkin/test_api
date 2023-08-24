@@ -1,0 +1,1 @@
+[32mINFO    [0m DeleteLogger:test_CourierLogin.py:32 Testing order acceptance without order ID

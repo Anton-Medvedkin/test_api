@@ -1,0 +1,2 @@
+[32mINFO    [0m DeleteLogger:test_OrderAcceptance.py:37 Testing order acceptance without order ID
+[35mDEBUG   [0m DeleteLogger:test_OrderAcceptance.py:39 Status code 404 was returned and message{'code': 404, 'message': 'Not Found.'}

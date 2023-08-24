@@ -1,0 +1,1 @@
+[35mDEBUG   [0m DeleteLogger:test_CourierDelete.py:23 Testing courier deletion without ID

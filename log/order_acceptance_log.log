@@ -1,0 +1,12 @@
+2023-08-21 19:22:53,297 - DeleteLogger - INFO - Testing order acceptance without order ID
+2023-08-21 19:22:53,438 - DeleteLogger - DEBUG - Status code 404 was returned and message{'code': 404, 'message': 'Not Found.'}
+2023-08-21 19:29:48,413 - DeleteLogger - INFO - Testing courier deletion without ID
+2023-08-21 19:29:48,664 - DeleteLogger - DEBUG - Status code 404 was returned and message{'code': 404, 'message': 'Not Found.'}
+2023-08-21 19:29:49,832 - DeleteLogger - INFO - Testing order acceptance without order ID
+2023-08-21 19:30:57,702 - DeleteLogger - INFO - Testing order acceptance without order ID
+2023-08-21 19:30:57,843 - DeleteLogger - DEBUG - Status code 404 was returned and message{'code': 404, 'message': 'Not Found.'}
+2023-08-24 11:39:19,113 - DeleteLogger - INFO - Testing courier deletion without ID
+2023-08-24 11:39:19,317 - DeleteLogger - DEBUG - Status code 404 was returned and message{'code': 404, 'message': 'Not Found.'}
+2023-08-24 11:39:20,946 - DeleteLogger - INFO - Testing order acceptance without order ID
+2023-08-24 11:40:27,668 - DeleteLogger - INFO - Testing order acceptance without order ID
+2023-08-24 11:40:27,828 - DeleteLogger - DEBUG - Status code 404 was returned and message{'code': 404, 'message': 'Not Found.'}
