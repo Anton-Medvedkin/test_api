@@ -1,10 +1,10 @@
 import requests
 from log import logger_setup
-import os
-
-
-log_file_path = os.path.join('C://Users//1//Desktop//INTEXSOFT//api_test//log', 'courier_login_log.log')
-logger = logger_setup.setup_logger("DeleteLogger", log_file_path)
+# import os
+#
+#
+# log_file_path = os.path.join('C://Users//1//Desktop//INTEXSOFT//api_test//log', 'courier_login_log.log')
+# logger = logger_setup.setup_logger("DeleteLogger", log_file_path)
 
 
 class TestLoginСapability:
@@ -29,12 +29,12 @@ class TestWithoutData:
     assert response.json() == {'code': 400, 'message': 'Недостаточно данных для входа'}, f"A {'code': 400, 'message': 'Недостаточно данных для входа'} response was expected and a {response.json()} response was returned."
 
  def test_login_without_password(self, base_url):
-    logger.info("Testing order acceptance without order ID")
+   # logger.info("Testing order acceptance without order ID")
     json_data = {
     "login": "Vasiliy"
     }
     response = requests.post(base_url + "courier/login", data=json_data)
-    logger.debug(f"Status code {response.status_code} was returned and message{response.json()}")
+   # logger.debug(f"Status code {response.status_code} was returned and message{response.json()}")
     assert response.status_code == 400, f"Status code 400 was expected and code {response.status_code} was returned."
     assert response.json() == {'code': 400, 'message': 'Недостаточно данных для входа'}, f"A {'code': 400, 'message': 'Недостаточно данных для входа'} response was expected and a {response.json()} response was returned."
 
