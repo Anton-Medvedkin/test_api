@@ -1,5 +1,5 @@
 import requests
-from log import logger_setup
+#from log import logger_setup
 # import os
 #
 #
